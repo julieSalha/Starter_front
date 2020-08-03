@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="./assets/styles/main.css" rel="stylesheet">
+        <title>Maestrooo</title>
+    </head>
+    <body>
+        <header>
+            <nav class="header-mobile">
+                <div class="header-mobile-left">
+                    <div class="header-mobile__logo">
+                        <a class="header-mobile__go-home" href="/"><img src="./assets/img/logo-white.svg" alt="monkey" /></a>
+                    </div>
+                    <div class="header-mobile__title">
+                        <h1 class="title-1">Bape®&nbsp;France</h1>
+                    </div>
+                </div>
+                <div class="header-mobile-right">
+                    <div class="header-mobile__search">
+                        <button type="button">
+                            <img src="./assets/img/icons/icon-search-white.svg" alt="magnifying glass">
+                        </button>
+                    </div>
+                    <div class="header-mobile__cart">
+                        <button type="button">
+                            <img src="./assets/img/icons/icon-cart-white.svg" alt="cart">
+                        </button>
+                    </div>
+                    <div class="header-mobile__burger-menu">
+                        <button type="button">
+                            <img src="./assets/img/icons/icon-burger-white.svg" alt="burger menu">
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <nav class="header-desktop">
+                <ul class="header-desktop__menu">
+                    <li><a href="#" class="header-desktop__link"><h3 class="title-3">E&nbsp;shop</h3></a></li>
+                    <li><a href="#" class="header-desktop__link"><h3 class="title-3">Capsules</h3></a></li>
+                    <li><a href="#" class="header-desktop__link"><h3 class="title-3">News</h3></a></li>
+                    <li><a class="header-desktop__logo" href="/"><img src="./assets/img/logo-color.svg" alt="monkey" /></a></li>
+                    <li><a href="#" class="header-desktop__link"><h3 class="title-3">Look&nbsp;Book</h3></a></li>
+                    <li><a href="#" class="header-desktop__link"><h3 class="title-3">Boutique</h3></a></li>
+                </ul>
+                <div class="header-desktop__menu-second">
+                    <div class="header-desktop__search">
+                        <button type="button">
+                            <img src="./assets/img/icons/icon-search.svg" alt="magnifying glass">
+                        </button>
+                    </div>
+                    <div class="header-desktop__burger-account">
+                        <button type="button">
+                            <img src="./assets/img/icons/icon-account.svg" alt="person">
+                        </button>
+                    </div>
+                    <div class="header-desktop__cart">
+                        <button type="button">
+                            <img src="./assets/img/icons/icon-cart.svg" alt="cart">
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="products-listing">
+            <div class="product-listing__products-menu product-listing__products-menu--mobile">
+                <button type="button" class="products-listing__filter" id="button-filter-mobile">
+                    <h4 class="title-4">filtrer</h4><img src="./assets/img/icons/icon-arrow.svg" alt="arrow">
+                </button>
+                <button type="button" class="products-listing__sort">
+                    <h4 class="title-4">trier&nbsp;par</h4><img src="./assets/img/icons/icon-arrow.svg" alt="arrow">
+                </button>
+                <div class="products-listing__dropdown-sort hidden">
+                    <ul>
+                        <li class="title-4">Nouveautés</li>
+                        <li class="title-4">Hommes</li>
+                        <li class="title-4">Femmes</li>
+                        <li class="title-4">Enfants</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-listing__name">
+                <h2 class="title-2">
+                    tous&nbsp;les&nbsp;produits
+                </h2>
+            </div>
+            <div class="product-listing__content">
+                <div class="product-listing__filters-list">
+                    <a href="/" class="product-listing__filters-list-action">
+                        <h4 class="title-4">tous les produits</h4>
+                    </a>
+                    <a href="/" class="product-listing__filters-list-action">
+                        <h4 class="title-4">nouveautés</h4>
+                    </a>
+                    <a href="/" class="product-listing__filters-list-action">
+                        <h4 class="title-4">hommes</h4>
+                    </a>
+                    <a href="/" class="product-listing__filters-list-action">
+                        <h4 class="title-4">femmes</h4>
+                    </a>
+                </div>
+                <div class="product-listing__products">
+                    <div class="product-listing__products-menu product-listing__products-menu--desktop">
+                        <button type="button" class="products-listing__filter" id="button-filter-desktop">
+                            <h4 class="title-4">filtrer</h4><img src="./assets/img/icons/icon-arrow.svg" alt="arrow">
+                        </button>
+            
+                        <button type="button" class="products-listing__sort">
+                            <h4 class="title-4">trier&nbsp;par</h4><img src="./assets/img/icons/icon-arrow.svg" alt="arrow">
+                        </button>
+                        <div class="products-listing__dropdown-sort hidden">
+                            <ul>
+                                <li class="title-4">Nouveautés</li>
+                                <li class="title-4">Hommes</li>
+                                <li class="title-4">Femmes</li>
+                                <li class="title-4">Enfants</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-listing__all-items" id="product-listing__all-items">
+                        <ul id="product-listing__all-items-list">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article id="sidebar-products-filters" class="sidebar-products-filters">
+            <div class="sidebar-products-content">
+                <div class="sidebar-products-filters__action">
+                    <button type="button">
+                        <span id="closeFilter">
+                            <h4 class="title-4">Fermer</h4>
+                        </span>
+                        
+                    </button>
+                </div>
+
+            <!--  Filters Line -->
+            <div class="accordion sidebar-products-filter__action sidebar-products-filter-line__action--line">
+                    <button >
+                        <h5 class="title-5">Ligne de produit</h5>
+                    </button>
+                </div>
+                <div class="panel sidebar-products-filter__all-lines">
+                    <div class="sidebar-products-filter-line__item">
+                        <input type="checkbox" id="1stcamo" name="1ST CAMO" value="1ST CAMO" class="sidebar-products-filter-line__input">
+                        <label class="subtitle"  for="1stcamo">1ST CAMO</label>
+                    </div>
+                    <div class="sidebar-products-filter-line__item">
+                        <input type="checkbox" id="mixcamo" name="MIX CAMO" value="MIX CAMO" class="sidebar-products-filter-line__input">
+                        <label class="subtitle"  for="mixcamo">MIX CAMO</label>
+                    </div>
+                    <div class="sidebar-products-filter-line__item">
+                        <input type="checkbox" id="colorcamo" name="COLOR CAMO" value="COLOR CAMO" class="sidebar-products-filter-line__input">
+                        <label class="subtitle"  for="colorcamo">COLOR CAMO</label>
+                    </div>
+                    <div class="sidebar-products-filter-line__item">
+                        <input type="checkbox" id="abccamo" name="ABC CAMO" value="ABC CAMO" class="sidebar-products-filter-line__input">
+                        <label class="subtitle"  for="abccamo">ABC CAMO</label>
+                    </div>
+                </div>
+        
+                <!-- Filters size -->
+                <div class="accordion sidebar-products-filter__action sidebar-products-filter__action--size">
+                    <button >
+                        <h5 class="title-5">Taille</h5>
+                    </button>
+            </div>
+                <div class="panel sidebar-products-filter__all-sizes">
+                    <div class="subtitle">vêtements</div>
+
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__input" id="xxs" name="XXS" value="XXS">
+                        <label class="sidebar-products-filter-size__label" for="xxs">xxs</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__input" id="xs" name="XS" value="XS">
+                        <label class="sidebar-products-filter-size__label" for="xs">xs</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__input" id="small" name="S" value="S">
+                        <label class="sidebar-products-filter-size__label" for="small">s</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__input" id="medium" name="M" value="M">
+                        <label class="sidebar-products-filter-size__label" for="medium">m</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__input" id="large" name="L" value="L">
+                        <label class="sidebar-products-filter-size__label" for="large">l</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__input" id="xlarge" name="XL" value="XL">
+                        <label class="sidebar-products-filter-size__label" for="xlarge">xl</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__input" id="2xl" name="2XL" value="2XL">
+                        <label class="sidebar-products-filter-size__label" for="2xl">2xl</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__input" id="3xl" name="3XL" value="3XL">
+                        <label class="sidebar-products-filter-size__label" for="3xl">3xl</label>
+                    </div>
+                    <div class="subtitle">chaussures</div>
+
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__item__input" id="size5" name="5" value="size5">
+                        <label class="sidebar-products-filter-size__item__label" for="size5">5</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__item__input" id="size5-5" name="5.5" value="5.5">
+                        <label class="sidebar-products-filter-size__item__label" for="size5-5">5.5</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__item__input" id="size6" name="6" value="6">
+                        <label class="sidebar-products-filter-size__item__label" for="size6">6</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__item__input" id="size6-5" name="6.5" value="6.5">
+                        <label class="sidebar-products-filter-size__item__label" for="size6-5">6.5</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__item__input" id="size7" name="7" value="7">
+                        <label class="sidebar-products-filter-size__item__label" for="size7">7</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__item__input" id="size7-5" name="7.5" value="7.5">
+                        <label class="sidebar-products-filter-size__item__label" for="size7-5">7.5</label>
+                    </div>
+                    <div class="sidebar-products-filter-size__item">
+                        <input type="checkbox" class="sidebar-products-filter-size__item__input" id="size8" name="8" value="8">
+                        <label class="sidebar-products-filter-size__item__label" for="size8">8</label>
+                    </div>
+                </div>
+        
+            <!--  Filters color -->
+            <div class="accordion sidebar-products-filter__action sidebar-products-filter-line__action--color">
+                    <button >
+                        <h5 class="title-5">Couleur</h5>
+                    </button>
+            </div>
+                <div class="panel sidebar-products-filter__all-colors">
+                    <div class="sidebar-products-filter-color__item sidebar-products-filter-color__item--black">
+                        <input type="checkbox" class="sidebar-products-filter-color__input" id="black" name="NOIR" value="NOIR">
+                        <label class="sidebar-products-filter-color__item__label" for="black"></label>
+                    </div>
+                    <div class="sidebar-products-filter-color__item sidebar-products-filter-color__item--grey">
+                        <input type="checkbox" class="sidebar-products-filter-color__input" id="grey" name="GREY" value="GREY">
+                        <label class="sidebar-products-filter-color__item__label" for="grey"></label>
+                    </div>
+                    <div class="sidebar-products-filter-color__item sidebar-products-filter-color__item--white">
+                        <input type="checkbox" class="sidebar-products-filter-color__input" id="white" name="BLANC" value="BLANC">
+                        <label class="sidebar-products-filter-color__item__label" for="white"></label>
+                    </div>
+                    <div class="sidebar-products-filter-color__item sidebar-products-filter-color__item--pink">
+                        <input type="checkbox" class="sidebar-products-filter-color__input" id="pink" name="ROSE" value="ROSE">
+                        <label class="sidebar-products-filter-color__item__label" for="pink"></label>
+                    </div>
+                    <div class="sidebar-products-filter-color__item sidebar-products-filter-color__item--green">
+                        <input type="checkbox" class="sidebar-products-filter-color__input" id="green" name="GREEN" value="GREEN">
+                        <label class="sidebar-products-filter-color__item__label" for="green"></label>
+                    </div>
+                    <div class="sidebar-products-filter-color__item sidebar-products-filter-color__item--orange">
+                        <input type="checkbox" class="sidebar-products-filter-color__input" id="orange" name="ORANGE" value="ORANGE">
+                        <label class="sidebar-products-filter-color__item__label" for="orange"></label>
+                    </div>
+                    <div class="sidebar-products-filter-color__item sidebar-products-filter-color__item--camo-orange">
+                        <input type="checkbox" class="sidebar-products-filter-color__input" id="camo-orange" name="1ST CAMO ORANGE" value="1ST CAMO ORANGE">
+                        <label class="sidebar-products-filter-color__item__label" for="camo-orange"></label>
+                    </div>
+                    <div class="sidebar-products-filter-color__item sidebar-products-filter-color__item--camo-red">
+                        <input type="checkbox" class="sidebar-products-filter-color__input" id="camo-red" name="COLOR CAMO ROUGE" value="COLOR CAMO ROUGE">
+                        <label class="sidebar-products-filter-color__item__label" for="camo-red"></label>
+                    </div>
+                    <div class="sidebar-products-filter-color__item sidebar-products-filter-color__item--camo-purple">
+                        <input type="checkbox" class="sidebar-products-filter-color__input" id="camo-purple" name="COLOR CAMO VIOLET" value="COLOR CAMO VIOLET">
+                        <label class="sidebar-products-filter-color__item__label" for="camo-purple"></label>
+                    </div>
+                </div>
+                
+                <button type="button" class="sidebar-products-filter__apply" id="sidebar-products-filter__apply"> 
+                    appliquer
+                </button>
+            </div>
+        </article>
+        <footer>&#169; Julie Salha for Maestrooo - 2020</footer>
+        <script src="./assets/js/products.js"></script>
+    </body>
+</html>
